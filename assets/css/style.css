@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+/**
+ * Setup imports and frameworks
+ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*-------------------------------------------------------------------------
+| VARIABLES
+|------------------------------------------------------------------------*/
+/* COLORS */
+/*-------------------------------------------------------------------------
+| CSS
+|------------------------------------------------------------------------*/
+/*------------------------------------*\
+    _BASE.SCSS
+\*------------------------------------*/
+/**
+ * IMPORTS
+ */
+/**
+ * BASE STYLES
+ */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #272822;
+  color: #54d6ef;
+  margin: 0;
+  padding: 2em;
+  font: 17px/1.5 Monospace;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #dedb71;
+}
+
+.string {
+  color: #dedb71;
+}
+.string:before {
+  content: "\"";
+}
+.string:after {
+  content: "\"";
+}
+
+.number {
+  color: #a37dd3;
+}
+
+.url:before {
+  content: "url(";
+  text-decoration: none;
+}
+.url:after {
+  content: ")";
+}
+
+.val-list {
+  display: inline;
+  list-style: none;
+  font-size: 0;
+}
+.val-list > li {
+  display: inline-block;
+  font-size: 17px;
+}
+.val-list > li:not(:last-child):after {
+  content: ",\00A0";
+}
+
+.comment-multi-line {
+  color: #757150;
+}
+.comment-multi-line:before {
+  content: "/**";
+  display: block;
+}
+.comment-multi-line:after {
+  content: "\00A0*/";
+  display: block;
+}
+
+.comment-multi-line__line {
+  display: block;
+}
+.comment-multi-line__line:before {
+  content: "\00A0*\00A0";
+}
+
+.comment-single-line {
+  color: #757150;
+}
+.comment-single-line:before {
+  content: "/*\00A0";
+}
+.comment-single-line:after {
+  content: "\00A0*/";
+}
+
+.class {
+  margin-bottom: 2rem;
+}
+.class:after {
+  content: "}";
+  color: #8ade2d;
+}
+
+.selector {
+  color: #8ade2d;
+  text-transform: lowercase;
+}
+.selector:before {
+  content: ".";
+}
+.selector:after {
+  content: "\00A0{";
+}
+
+.el:before {
+  content: attr(data-parent) "__";
+}
+
+.prop {
+  float: left;
+  padding-left: 42.5px;
+  padding-left: 2.5rem;
+  text-transform: lowercase;
+  color: #54d6ef;
+}
+.prop:after {
+  color: #f8f8f8;
+  content: ":\00A0";
+}
+
+.val:after {
+  color: #f8f8f8;
+  content: ";";
+}
+
+.margin--l {
+  margin-bottom: 85px;
+  margin-bottom: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

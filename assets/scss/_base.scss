@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    _BASE.SCSS
+\*------------------------------------*/
+
+/**
+ * IMPORTS
+ */
+
+/**
+ * BASE STYLES
+ */
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background-color: $c-background;
+	color: $c-prop;
+	margin: 0;
+	padding: 2em;
+	font: #{$base-font-size}/1.5 Monospace;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: $c-string;
+}

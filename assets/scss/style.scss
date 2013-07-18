@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+
+@charset "UTF-8";
+
+/**
+ * Setup imports and frameworks
+ */
+
+@import "../components/bourbon/app/assets/stylesheets/bourbon";
+@import "../components/neat/app/assets/stylesheets/neat";
+@import "../components/reset-scss/reset";
+
+
+/*-------------------------------------------------------------------------
+| VARIABLES
+|------------------------------------------------------------------------*/
+$base-font-size: 17px;
+$max-width: em(1200, $base-font-size);
+
+/* COLORS */
+$c-background: #272822;
+$c-comment: #757150;
+$c-selector: #8ade2d;
+$c-prop: #54d6ef;
+$c-string: #dedb71;
+$c-number: #a37dd3;
+$c-neutral: #f8f8f8;
+
+
+/*-------------------------------------------------------------------------
+| CSS
+|------------------------------------------------------------------------*/
+
+@import "base";
+
+@import "atoms/types";
+@import "atoms/val-list";
+
+
+@import "atoms/comments";
+@import "modules/ruleset";
+
+@import "atoms/space";

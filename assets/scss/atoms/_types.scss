@@ -1,0 +1,24 @@
+.string {
+	color: $c-string;
+
+	&:before {
+		content: "\"";
+	}
+	&:after {
+		content: "\"";
+	}
+}
+
+.number {
+	color: $c-number;
+}
+
+.url {
+	&:before {
+		content: "url(";
+			text-decoration: none;
+	}
+	&:after {
+		content: ")";
+	}
+}

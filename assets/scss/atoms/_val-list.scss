@@ -1,0 +1,14 @@
+.val-list {
+	display: inline;
+	list-style: none;
+	font-size: 0;
+
+	> li {
+		display: inline-block;
+		font-size: $base-font-size;
+
+		&:not(:last-child):after {
+			content: ",\00A0";
+		}
+	}
+}

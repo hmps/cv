@@ -1,0 +1,47 @@
+.class {
+	margin-bottom: 2rem;
+
+	&:after {
+		content: "}";
+		color: $c-selector;
+	}
+}
+
+.selector {
+	color: $c-selector;
+	text-transform: lowercase;
+
+	&:before {
+		content: ".";
+	}
+
+	&:after {
+		content: "\00A0{";
+	}
+}
+
+.el {
+	&:before {
+		content: attr(data-parent) "__";
+	}
+}
+
+.prop {
+	float: left;
+	padding-left: 42.5px;
+	padding-left: 2.5rem;
+	text-transform: lowercase;
+	color: $c-prop;
+
+	&:after {
+		color: $c-neutral;
+		content: ":\00A0";
+	}
+}
+
+.val {
+	&:after {
+		color: $c-neutral;
+		content: ";";
+	}
+}

@@ -1,0 +1,12 @@
+.selector {
+	color: $c-selector;
+	text-transform: lowercase;
+
+	&:before {
+		content: ".";
+	}
+
+	&:after {
+		content: "\00A0{";
+	}
+}

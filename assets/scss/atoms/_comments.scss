@@ -1,0 +1,33 @@
+.comment-multi-line {
+	color: $c-comment;
+
+	&:before {
+		content: "/**";
+		display: block;
+	}
+
+	&:after {
+		content: "\00A0*/";
+		display: block;
+	}
+}
+
+.comment-multi-line__line {
+	display: block;
+
+	&:before {
+		content: "\00A0*\00A0";
+	}
+}
+
+.comment-single-line {
+	color: $c-comment;
+
+	&:before {
+		content: "/*\00A0";
+	}
+
+	&:after {
+		content: "\00A0*/";
+	}
+}
