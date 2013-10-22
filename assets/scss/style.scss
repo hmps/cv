@@ -38,8 +38,8 @@ $c-neutral: #f8f8f8;
 @import "atoms/types";
 @import "atoms/val-list";
 
-
 @import "atoms/comments";
-@import "modules/ruleset";
+@import "modules/class";
+@import "modules/github-banner";
 
-@import "atoms/space";
+@import "atoms/margins";
