@@ -1,4 +1,4 @@
-GRUNT TEMPLATE
+My CSS CV
 ========
 
-Template for projects using Grunt.
+My CV, formatted as a CSS file.
