@@ -4,3 +4,40 @@
 	right: 0;
 	border: 0;
 }
+
+.github-ribbon {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	border: 0;
+	background-color: $c-number;
+	color: #333;
+	text-decoration: none;
+	padding: 8.5px;
+	padding: .5rem;
+	font-size: 15px;
+	font-size: .9em;
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-ms-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+
+
+
+	&:hover {
+		background-color: $c-selector;
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			box-shadow: 0 0 0 8px $c-selector;
+			opacity: 0.3;
+		}
+
+	}
+}
